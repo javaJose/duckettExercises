@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jfgforms and buttons</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+-------------------
+
+<h1>Form Control Labels</h1>
+<p>The < label >  element uniquely identifies forms<br />
+  for accessibility and can either top, follow, or <br />
+    appear on the side of its input field</p>
+<h4>fill in these form boxes on the right or left</h4>
+<label> Age: <input type="text" name="age" /><br />
+    <input type="text" name="age" />Age<br />
+    Height: <input type="text" name="height" /><br />
+    <input type="text" name="height" />Height: <br />
+
+    <p>top...</p>
+    Shoesize: <br /><input type="text" name="shoesize" /><br />
+    Hatsize: <br /><input type="text" name="hatsize" /><br />
+    <p>bottom...</p>
+    <input type="text" name="inseam" /><br />Inseam<br />
+    <input type="text" name="waist" /><br />Waist<br />
+
+</label>
+<h4>and following...</h4>
+Gender:
+<input id="female" type="radio" name="gender" value="f" >
+<label for="female">Female</label>
+<input id="male" type="radio" name="gender" value="m">
+<label for="male">Male</label>
+<br />
+Education:
+<input id="high" type="radio" name="school" value="h">
+<label for="high">High School Graduate</label>
+<input id="degree" type="radio" name="school" value="d">
+<label for="degree">Four Year Degree</label>
+<input id="postgrad" type="radio" name="school" value="p">
+<label for="postgrad">Postgraduate Degree</label>
+<p>.</p>
+<h4>or on the line before the label...</h4>
+<input id="femalex" type="radio" name="genderx" value="fx" >
+<label for="femalex">Female</label>
+<input id="malex" type="radio" name="genderx" value="mx">
+<label for="malex">Male</label>
+<br />GenderX:
+<br />
+<input id="highx" type="radio" name="schoolx" value="hx">
+<label for="highx">High School GraduateX</label>
+<input id="degreex" type="radio" name="schoolx" value="dx">
+<label for="degreex">Four Year DegreeX</label>
+<input id="postgradx" type="radio" name="schoolx" value="px">
+<label for="postgradx">Postgraduate DegreeX</label>
+<br />EducationX:
+<p>.</p>
+<h1>Column of Radio Buttons</h1>
+Plan:<br />
+<input id="bronze" type="radio" name="plan" value="bp">
+<label for="bronze">Bronze</label></p>
+<p><input id="silver" type="radio" name="plan" value="sp">
+<label for="silver">Silver Plan</label></p>
+<p><input id="gold" type="radio" name="plan" value="gp">
+<label for="gold">Gold Plan</label></p>
+<p>.</p>
+<h1>Button and Hidden Controls</h1>
+<form action="http://www.example.com/add.php">
+    <button><img src="images/add.gif" alt="add" width="10" height="10" /> Add </button>
+    <input type="hidden" name="bookmark" value="lyrics" />
+</form>
+
+<p>.</p>
+<h1>Image Button</h1>
+<form action="http://www.example.org/subscribe.php">
+    <p>Subscribe to our email list:</p>
+    <input type="text" name="email" />
+    <input type="image" src="images/subscribe.jpg" width="100" height="20 />"
+</form>
+<p>.</p>
+<h1>Submit Button</h1>
+<form action="http://www.example.com/subscribe.php">
+    <p>subscribe to our email list:</p>
+    <input type="text" name="email">
+    <input type="submit" name="subscribe" value="subscribe" />
+</form>
+<p>.</p>
+<h1>File Input Box Practice</h1>
+<form action="http://www.example.com/upload.php" method="post">
+    <p>Upload your song in mp3 format</p>
+    <input type="file" name="user-song" /><br />
+    <input type="submit" value="Upload" >
+</form>
+<p>.</p>
+<h1>Multiple Select Box Practice</h1>
+<form action="http://www.example.com/profile.php">
+    <p>
+        Do you play any of the following instruments? You can select more than one option by holding down control on a PC or command key on a Mac while selecting different options.)
+    </p>
+    <select name="instruments" size="5" multiple="multiple">
+        <option value="guitar" selected="selected">Guitar</option>
+        <option value="drums">Drums</option>
+        <option value="keyboard">Keyboard</option>
+        <option value="bass">Bass</option>
+        <option value="sax">Saxophone</option>
+        <option value="electricTriangle">Electric Triangle</option>
+        <option value="voice">Voice</option>
+    </select>
+</form>
+<p>.</p>
+<h1>Drop Down List Practice</h1>
+<form action="http://www.example.com/profile.php">
+    <p>What device do you listen to music on?</p>
+    <select name="devices">
+        <option value="ipod">iPod</option>
+        <option value="radio">Radio</option>
+        <option value="computer">Computer</option>
+        <option value="alarmClock">Alarm Clock</option>
+    </select>
+</form>
+<p>.</p>
+<h1>Checkbox Practice</h1>
+<form action="http://www.example.com.profile.php">
+    <p>Please select your favorite music service(s):<br/>
+    <input type="checkbox" name="service" value="itunes" checked="checked" /> iTunes
+        <input type="checkbox" name="service" value="lastfm" /> Last.fm
+        <input type="checkbox" name="service" value="spotify" /> Spotify
+    </p>
+</form>
+<p>.</p>
+<h1>Buttons Practice</h1>
+<form action="http://www.example.com/profile.php">
+    <p>Please Select Your Favorite genre:<br/>
+        <input type="radio" name="genre" value="rock" checked="checked" /> Rock
+        <input type="radio" name="genre" value="pop" /> Pop
+        <input type="radio" name="genre" value="jazz" /> Jazz
+        <input type="radio" name="genre" value="classical" /> Classical
+    </p>
+</form>
+<h1>Forms Practice</h1>
+<p>.</p>
+<form action="http://www.example.com/comments.php">
+    <p>What did you think of this gig?</p>
+    <textarea name="comments" cols="30" rows="10">You have to delete this text manually before you can enter your own comments...</textarea>
+</form>
+<p>.</p>
+<form action="http://www.example.com./login.php">
+    <p>
+        Username:
+        <input type="text" name="username" size="15" maxlength="35"
+    </p>
+    <p>
+        Password:
+        <input type="password" name="password" size="15"
+               maxlength="35" />
+    </p>
+</form>
+<p>.</p>
+<h4>form inputs such as username</h4>
+<form action="http://www.example/login.php">
+    <p>
+        <input type="text" name="username" size="15" maxlength="35 />"
+    </p>
+</form>
+<p>.</p>
+<h4>form structure</h4>
+<form action="http://www.example.com/subscribe.php" method="get">
+    <p>
+        This is where the form controls will appear
+    </p>
+</form>
+<p>.</p>
+
+_______________
+
+</body>
+</html>
